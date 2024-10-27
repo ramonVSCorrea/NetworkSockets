@@ -1,0 +1,5 @@
+# ninja log v6
+3	1786	7517486295217354	CMakeFiles/ReceiveClient.dir/main.c.obj	235ccda58e9462b
+19	1804	7517486295378363	CMakeFiles/ReceiveClient.dir/ReceiveClient.c.obj	5f6b4348a238ef18
+9	433	7517487208673183	build.ninja	6a46e09f1c1b5979
+15	246	7517487157680028	ReceiveClient.exe	c4d2d7c9e0f1709a
