@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/1210499/Desktop/ProjetoRedes/SendClient/cmake-build-debug"
+			"value" : "c:/Users/1210499/Desktop/NetworkSockets/Windows/ReceiveClient/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -431,7 +431,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/1210499/Desktop/ProjetoRedes/SendClient/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/1210499/Desktop/NetworkSockets/Windows/ReceiveClient/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -503,7 +503,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/1210499/Desktop/ProjetoRedes/SendClient"
+			"value" : "C:/Users/1210499/Desktop/NetworkSockets/Windows/ReceiveClient"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -515,7 +515,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/SendClient"
+			"value" : "C:/Program Files (x86)/ReceiveClient"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -731,7 +731,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "SendClient"
+			"value" : "ReceiveClient"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1126,7 +1126,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "SendClient_BINARY_DIR",
+			"name" : "ReceiveClient_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1135,10 +1135,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/1210499/Desktop/ProjetoRedes/SendClient/cmake-build-debug"
+			"value" : "C:/Users/1210499/Desktop/NetworkSockets/Windows/ReceiveClient/cmake-build-debug"
 		},
 		{
-			"name" : "SendClient_IS_TOP_LEVEL",
+			"name" : "ReceiveClient_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1150,7 +1150,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "SendClient_SOURCE_DIR",
+			"name" : "ReceiveClient_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1159,7 +1159,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/1210499/Desktop/ProjetoRedes/SendClient"
+			"value" : "C:/Users/1210499/Desktop/NetworkSockets/Windows/ReceiveClient"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

@@ -1,3 +1,3 @@
-C:/Users/1210499/Desktop/ProjetoRedes/SendClient/cmake-build-debug/CMakeFiles/SendClient.dir
-C:/Users/1210499/Desktop/ProjetoRedes/SendClient/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/1210499/Desktop/ProjetoRedes/SendClient/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/1210499/Desktop/NetworkSockets/Windows/SendClient/cmake-build-debug/CMakeFiles/SendClient.dir
+C:/Users/1210499/Desktop/NetworkSockets/Windows/SendClient/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/1210499/Desktop/NetworkSockets/Windows/SendClient/cmake-build-debug/CMakeFiles/rebuild_cache.dir

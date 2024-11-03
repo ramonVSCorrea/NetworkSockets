@@ -1,10 +1,5 @@
 # ninja log v6
-7	375	7517466768554404	build.ninja	8155bb706d9b4fac
-19	1678	7517455519260614	CMakeFiles/SendClient.dir/SendClient.c.obj	9349d0de692d5276
-20	1525	7517459475641686	CMakeFiles/SendClient.dir/main.c.obj	d56ef99c08698fe2
-1526	1726	7517459490704632	SendClient.exe	dfa9f346fac97f18
-10	1553	7517467520235742	CMakeFiles/SendClient.dir/main.c.obj	d56ef99c08698fe2
-13	220	7517468259687858	SendClient.exe	dfa9f346fac97f18
-10	1703	7517487456784227	CMakeFiles/SendClient.dir/main.c.obj	d56ef99c08698fe2
+7	375	7523419308451114	build.ninja	8155bb706d9b4fac
 24	1707	7517487456925054	CMakeFiles/SendClient.dir/SendClient.c.obj	9349d0de692d5276
+10	1703	7517487456784227	CMakeFiles/SendClient.dir/main.c.obj	d56ef99c08698fe2
 1708	1922	7517487473751926	SendClient.exe	dfa9f346fac97f18
