@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/1210499/Desktop/ProjetoRedes/Server/cmake-build-debug"
+			"value" : "c:/Users/1210499/Desktop/NetworkSockets/Windows/Server/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -431,7 +431,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/1210499/Desktop/ProjetoRedes/Server/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/1210499/Desktop/NetworkSockets/Windows/Server/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -503,7 +503,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/1210499/Desktop/ProjetoRedes/Server"
+			"value" : "C:/Users/1210499/Desktop/NetworkSockets/Windows/Server"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe"
+			"value" : "C:/Program Files/JetBrains/CLion 2024.2.2/bin/ninja/win/x64/ninja.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -1135,7 +1135,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/1210499/Desktop/ProjetoRedes/Server/cmake-build-debug"
+			"value" : "C:/Users/1210499/Desktop/NetworkSockets/Windows/Server/cmake-build-debug"
 		},
 		{
 			"name" : "Server_IS_TOP_LEVEL",
@@ -1159,7 +1159,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/1210499/Desktop/ProjetoRedes/Server"
+			"value" : "C:/Users/1210499/Desktop/NetworkSockets/Windows/Server"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

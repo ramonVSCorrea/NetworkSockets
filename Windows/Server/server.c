@@ -12,7 +12,7 @@ void send_server_status() {
     time_t current_time = time(NULL);
     int elapsed_time = (int)difftime(current_time, server_start_time);
     char status_message[141];
-    snprintf(status_message, sizeof(status_message), "Server ID: 0, Clients: %d, Uptime: %d seconds", client_count, elapsed_time);
+    snprintf(status_message, sizeof(status_message), "ID do Servidor: 0, Clientes Conectados: %d, Uptime: %d segundos", client_count, elapsed_time);
 
     msg_t message;
     message.type = htons(MSG_TYPE_MSG);
@@ -24,7 +24,7 @@ void send_server_status() {
     for (int i = 0; i < client_count; i++) {
         send(clients[i].socket, (char *)&message, sizeof(message), 0);
     }
-    printf("Status message sent: %s\n", status_message);
+    printf("Mensagem de status enviada: %s\n", status_message);
 }
 
 // Inicia o servidor
@@ -96,10 +96,6 @@ void start_server(const char *port) {
             printf("Select falhou. Error: %d\n", WSAGetLastError());
             break;
         }
-        // if (select(0, &read_fds, NULL, NULL, NULL) == SOCKET_ERROR) {
-        //     printf("Select falhou. Error: %d\n", WSAGetLastError());
-        //     break;
-        // }
 
         // Aceita novas conexões
         if (FD_ISSET(listen_socket, &read_fds)) {

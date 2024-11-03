@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/1210499/Desktop/ProjetoRedes/Server/cmake-build-debug",
-		"source" : "C:/Users/1210499/Desktop/ProjetoRedes/Server"
+		"build" : "C:/Users/1210499/Desktop/NetworkSockets/Windows/Server/cmake-build-debug",
+		"source" : "C:/Users/1210499/Desktop/NetworkSockets/Windows/Server"
 	},
 	"version" : 
 	{
