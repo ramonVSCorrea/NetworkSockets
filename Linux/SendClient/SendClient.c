@@ -71,7 +71,7 @@ void start_send_client(const char* server_addr,
     strcpy((char*)message.text, text);
 
     // Envia a mensagem ao servidor
-    send(sock, &message, sizeof(message), 0);
+    send(sock, (char*)&message, sizeof(message), 0);
   }
 
   // Fecha o socket

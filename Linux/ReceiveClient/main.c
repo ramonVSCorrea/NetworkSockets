@@ -6,7 +6,7 @@ int main(int argc, char* argv[]) {
   // Valores padrão para o endereço do servidor, porta e UID
   const char* default_server_addr = "127.0.0.1";  // Endereço do servidor
   const char* default_port = "8080";              // Porta
-  const char* default_uid = "1001";               // UID
+  const char* default_uid = "1002";               // UID
 
   // Verifica se o número de argumentos é diferente de 4
   if (argc != 4) {
