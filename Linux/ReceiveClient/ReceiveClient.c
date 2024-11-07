@@ -62,7 +62,15 @@ void start_receive_client(const char* server_addr,
 
     // Verifica se a mensagem recebida é uma mensagem de texto
     if (ntohs(message.type) == MSG_TYPE_MSG) {
-      printf("Mensagem de %hu: %s\n", ntohs(message.orig_uid), message.text);
+      uint16_t orig_uid = ntohs(message.orig_uid);
+      uint16_t dest_uid = ntohs(message.dest_uid);
+      if (dest_uid == uid) {
+        printf("Mensagem privada de %hu para %hu: %s\n", orig_uid, dest_uid,
+               message.text);
+      } else {
+        printf("Mensagem de %hu para %hu: %s\n", orig_uid, dest_uid,
+               message.text);
+      }
     }
   }
 
