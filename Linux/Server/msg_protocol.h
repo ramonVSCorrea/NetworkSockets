@@ -6,6 +6,7 @@
 #define MSG_TYPE_OI 0    /**< Mensagem de identificação incial */
 #define MSG_TYPE_TCHAU 1 /**< Mensagem de despedida */
 #define MSG_TYPE_MSG 2   /**< Mensagem de texto */
+#define MSG_TYPE_ERRO 3  /**< Mensagem de erro */
 
 /**
  * @brief Estrutura que representa uma mensagem no protocolo.

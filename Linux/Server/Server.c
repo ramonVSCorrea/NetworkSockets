@@ -87,6 +87,16 @@ void broadcast_message(msg_t* message, client_t* sender) {
   }
 }
 
+// Função para verificar se um UID já está em uso
+int is_uid_in_use(uint16_t uid) {
+  for (int i = 0; i < client_count; i++) {
+    if (clients[i].uid == uid) {
+      return 1;
+    }
+  }
+  return 0;
+}
+
 // Função para iniciar o servidor
 void start_server(const char* port) {
   int listen_socket;
@@ -161,10 +171,38 @@ void start_server(const char* port) {
         continue;
       }
 
+      // Recebe a mensagem de saudação (OI) do novo cliente
+      msg_t message;
+      int bytes_received = recv(new_socket, &message, sizeof(message), 0);
+      if (bytes_received <= 0 || ntohs(message.type) != MSG_TYPE_OI) {
+        printf("Falha ao receber mensagem OI.\n");
+        close(new_socket);
+        continue;
+      }
+
+      uint16_t new_uid = ntohs(message.orig_uid);
+      if (is_uid_in_use(new_uid) ||
+          (new_uid <= 999 && is_uid_in_use(new_uid + 1000))) {
+        printf("UID %hu já está em uso. Conexão recusada.\n", new_uid);
+        message.type = htons(MSG_TYPE_ERRO);
+        send(new_socket, &message, sizeof(message), 0);
+        close(new_socket);
+        continue;
+      }
+
       if (client_count < MAX_CLIENTS) {
         clients[client_count].socket = new_socket;
+        clients[client_count].uid = new_uid;
         client_count++;
-        printf("Novo cliente conectado.\n");
+        printf("Novo cliente conectado com UID %hu.\n", new_uid);
+
+        // Envia a resposta "OI" de volta ao cliente
+        msg_t oi_response;
+        oi_response.type = htons(MSG_TYPE_OI);
+        oi_response.orig_uid = htons(0);  // UID do servidor
+        oi_response.dest_uid = htons(new_uid);
+        oi_response.text_len = htons(0);
+        send(new_socket, &oi_response, sizeof(oi_response), 0);
       } else {
         printf("Número máximo de clientes atingido. Conexão recusada.\n");
         close(new_socket);
