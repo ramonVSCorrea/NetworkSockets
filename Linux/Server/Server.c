@@ -181,9 +181,38 @@ void start_server(const char* port) {
       }
 
       uint16_t new_uid = ntohs(message.orig_uid);
-      if (is_uid_in_use(new_uid) ||
-          (new_uid <= 999 && is_uid_in_use(new_uid + 1000))) {
-        printf("UID %hu já está em uso. Conexão recusada.\n", new_uid);
+
+      // Verifica se é um cliente de exibição (UID entre 1 e 999)
+      if (new_uid >= 1 && new_uid <= 999) {
+        // Verifica se o UID
+        if (is_uid_in_use(new_uid)) {
+          printf(
+              "UID %hu já está em uso para um cliente de exibição. Conexão "
+              "recusada.\n",
+              new_uid);
+          message.type = htons(MSG_TYPE_ERRO);
+          send(new_socket, &message, sizeof(message), 0);
+          close(new_socket);
+          continue;
+        }
+      }
+      // Verifica se é um cliente de envio de mensagens (UID entre 1001 e 1999)
+      else if (new_uid >= 1001 && new_uid <= 1999) {
+        // Verifica se apenas o UID está em uso (sem verificar UID - 1000)
+        if (is_uid_in_use(new_uid)) {
+          printf(
+              "UID %hu já está em uso para um cliente de envio. Conexão "
+              "recusada.\n",
+              new_uid);
+          message.type = htons(MSG_TYPE_ERRO);
+          send(new_socket, &message, sizeof(message), 0);
+          close(new_socket);
+          continue;
+        }
+      } else {
+        // UID inválido, fora do intervalo permitido
+        printf("UID %hu está fora do intervalo permitido. Conexão recusada.\n",
+               new_uid);
         message.type = htons(MSG_TYPE_ERRO);
         send(new_socket, &message, sizeof(message), 0);
         close(new_socket);

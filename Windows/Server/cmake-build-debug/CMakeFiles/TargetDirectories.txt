@@ -1,3 +1,0 @@
-C:/Users/1210499/Desktop/NetworkSockets/Windows/Server/cmake-build-debug/CMakeFiles/Server.dir
-C:/Users/1210499/Desktop/NetworkSockets/Windows/Server/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/1210499/Desktop/NetworkSockets/Windows/Server/cmake-build-debug/CMakeFiles/rebuild_cache.dir

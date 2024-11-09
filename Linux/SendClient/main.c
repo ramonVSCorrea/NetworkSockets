@@ -11,8 +11,10 @@ int main(int argc, char* argv[]) {
   if (argc != 4) {
     // Exibe a mensagem de uso e os valores padrão
     printf("Uso: %s <endereco_servidor> <porta> <uid>\n", argv[0]);
-    printf("Usando valores padrão: %s %s %s\n", default_server_addr,
-           default_port, default_uid);
+    printf(
+        "Usando valores padrão: Endereço do servidor = %s, Porta = %s e UID = "
+        "%s\n",
+        default_server_addr, default_port, default_uid);
 
     // Define os valores padrão nos argumentos
     argv[1] = (char*)default_server_addr;
